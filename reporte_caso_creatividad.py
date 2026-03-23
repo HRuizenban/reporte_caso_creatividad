@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 # Cargar datos
 # ----------------
 
-# el archivo está en el mismo directorio
+# datos
 df = pd.read_csv("campanas_creatividad_digital.csv")
 
 # limpiar nombres de columnas
@@ -20,9 +20,9 @@ print("Columnas disponibles:")
 print(df.columns)
 
 
-# --------------------
-# Métricas derivadas
-# -------------------
+# -----------
+# Métricas 
+# -----------
 
 df["ctr"] = df["clicks"] / df["impresiones"]
 df["cvr"] = df["conversiones"] / df["clicks"]
